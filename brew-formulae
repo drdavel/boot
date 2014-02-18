@@ -1,3 +1,7 @@
+pyenv
+pyenv-virtualenv
+fontconfig
+gettext
 freetype
 libpng
 pkg-config
