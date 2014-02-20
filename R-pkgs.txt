@@ -1,0 +1,14 @@
+devtools
+knitr
+markdown
+plyr
+ape
+phangorn
+phytools
+data.table
+ggplot2
+grid
+gtable
+Rcpp
+XML
+cairoDevice
