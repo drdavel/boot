@@ -5,3 +5,5 @@ gettext
 freetype
 libpng
 pkg-config
+gsl
+cairo
