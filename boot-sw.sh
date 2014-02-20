@@ -10,7 +10,7 @@ curl -fsSL https://raw.github.com/pypa/pip/master/contrib/get-pip.py --output ge
 sudo python get-pip.py
 
 # installing brew formulae
-for pkg in `cat brew-formulae` ; do
+for pkg in `cat brew-formulae.txt` ; do
     brew install $pkg
 done
 
