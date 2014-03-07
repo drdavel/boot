@@ -30,8 +30,21 @@ done
 # install packages needed in each virtual env
 echo "Installing package requirements for Python virtual environments" 
 
+# this is needed at least for numpy to build successfully
+export CC=clang
+export CXX=clang++
+export FFLAGS=-ff2c
+
+# this is needed for matplotlib to build successfully
+test -d /usr/local/include/freetype || sudo ln -s /usr/X11/include/freetype2/freetype /usr/local/include/freetype
+
 for venv in `ls requirements-*.txt | perl -p -e 's/.*-(\w+)\.txt/$1/;'` ; do
     echo "########### $venv"
     . $pyenv_dir/$venv/bin/activate
     pip install -r requirements-$venv.txt
 done
+
+# cleanup in case we add stuff later
+unset CC
+unset CXX
+unset FFLAGS
