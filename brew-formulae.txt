@@ -1,5 +1,3 @@
-pyenv
-pyenv-virtualenv
 fontconfig
 gettext
 freetype
