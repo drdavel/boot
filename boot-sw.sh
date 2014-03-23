@@ -48,3 +48,9 @@ done
 unset CC
 unset CXX
 unset FFLAGS
+
+# finally, we'll switch from the bootstrapped Git OSX Installer-installed
+# version of git to the one managed by brew
+echo "Uninstalling and reinstalling git"
+sudo bash uninstall-bootstrapped-git.sh
+brew install git
