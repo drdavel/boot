@@ -6,3 +6,5 @@ pkg-config
 gsl
 cairo
 gfortran
+wget
+redis
