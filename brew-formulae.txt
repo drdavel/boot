@@ -8,3 +8,7 @@ cairo
 gfortran
 wget
 redis
+cmake
+mpfr
+openssl
+gpg2
