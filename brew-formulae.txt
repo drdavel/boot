@@ -12,3 +12,4 @@ cmake
 mpfr
 openssl
 gpg2
+sqlite3
